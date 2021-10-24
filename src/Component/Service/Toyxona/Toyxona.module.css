@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.searche_input {
+    width: 100%;
+    /* border: 2px solid red; */
+    text-align: center;
+    margin-top: -2rem;
+    position: absolute;
+
+}
+
+.searche_input input {
+    width: 60%;
+    padding: 1rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #9D9B9B;
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 60px;
+}
+
+.Header {
+    grid-area: h;
+}
+
+.Catalog {
+    grid-area: c;
+    padding: 0 3rem;
+}
+
+.Img {
+    width: 100%;
+    position: relative;
+}
+
+.block {
+    position: absolute !important;
+    margin: -10rem 0 0 19rem;
+}
+
+.title {
+    margin-bottom: 13px;
+    font-size: 46px;
+    line-height: 56px;
+    color: white;
+}
+
+.title,
+.text,
+.Wedding_Hall_Catalog_name,
+.Wedding_Hall_address,
+.Wedding_Hall_map {
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.text {
+    color: white;
+    width: 367px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/* Wedding_Hall_Catalog */
+.Wedding_Hall_Catalog {
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 18px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 0 2rem;
+    margin-bottom: 54px;
+}
+
+.Wedding_Hall_Catalog_name {
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 7px;
+    color: #3F3F3F;
+}
+
+.plane {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Wedding_Hall_Catalog_name_servis {
+    margin: 33px 0 0 0;
+}
+
+.Wedding_Hall_address {
+    font-size: 16px;
+    line-height: 20px;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    color: #3F3F3F;
+}
+
+.Wedding_Hall_address img {
+    margin-right: 6px;
+}
+
+.Wedding_Hall_map {
+    margin: 63px 0 0 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: #3F3F3F;
+}
+
+.Wedding_Hall_Img_Block {
+    display: flex;
+    margin-top: 38px;
+    width: 1001px;
+    overflow: auto;
+}
+
+.Wedding_Hall_Img {
+    margin: 0 33px 1rem 0;
+}
+
+.Wedding_Hall_Cost_Block {
+    display: flex;
+    background: #F3F1F1;
+    border-radius: 7px;
+    padding: 32px 0rem 39px 0rem;
+    margin: 18px 0;
+}
+
+.Wedding_Hall_Cost {
+    display: flex;
+    padding: 3px 30px;
+    border-right: 1px solid #797575;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.Wedding_Hall_Cost p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #797575;
+    margin-bottom: 5px;
+}
+
+.Wedding_Hall_Cost h6 {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+
+    line-height: 15px;
+    color: black;
+}
+
+.Wedding_Hall_Cost img {
+    margin-right: 1rem;
+}
+
+.Catalog button {
+    background: #FFFFFF;
+    border: 1px solid #E4BD63;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 230px;
+    font-size: 16px;
+    text-align: center;
+    height: 55px;
+}
+
+.Yana {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+@media (min-width:0) and (max-width:649.9px) {
+    .Header {
+        width: 100%;
+    }
+
+    .Wedding_Hall_Img_Block {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .block {
+        margin: -4.199999999999999rem 0 0 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .Img {
+        width: 100% !important;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .Catalog {
+        padding: 0;
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .title {
+        margin-bottom: 0;
+        font-size: 12px;
+        width: 100%;
+        line-height: 16px;
+    }
+
+    .text {
+        width: 100%;
+        font-size: 9.5px;
+        margin-left: 0rem;
+        line-height: 14px;
+    }
+
+    /* Wedding_Hall_Catalog */
+    .Wedding_Hall_Catalog {
+        padding: 0 1rem;
+        width: 80%;
+    }
+
+    .Wedding_Hall_Cost_Block {
+        flex-direction: column;
+    }
+
+    .Wedding_Hall_Img {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .Wedding_Hall_Cost {
+        border-right: none;
+    }
+
+    .Catalog button {
+        width: 80%;
+        font-size: 16px;
+        height: 55px;
+    }
+
+    .Wedding_Hall_Cost {
+        padding: 3px 10px;
+        margin-right: 0.2rem;
+    }
+
+    .searche_input{
+        margin-top: -1rem;
+    }
+
+    .searche_input input {
+        width: 60%;
+        padding: 1rem;
+        font-size: 14px;
+        line-height: 22px;
+        border-radius: 10px;
+        height: 30px;
+    }
+}
+
+@media (min-width:650px) and (max-width:849.9px) {
+    .Catalog {
+        padding: 0;
+        margin-top: 3rem;
+    }
+
+    .Wedding_Hall_Img_Block {
+        width: 455px;
+    }
+
+    /* Wedding_Hall_Catalog */
+    .Wedding_Hall_Catalog {
+        border-radius: 10px;
+        padding: 0 10px;
+        width: 100%;
+        margin-bottom: 34px;
+    }
+
+    .Wedding_Hall_Cost_Block {
+        padding: 12px 0rem 19px 0rem;
+    }
+
+    .block {
+        margin: -6rem 0 0 0rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 30px;
+        line-height: 20px;
+    }
+
+    .text {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .Wedding_Hall_Cost {
+        padding: 3px 10px;
+        margin-right: 0.2rem;
+    }
+
+}
+
+@media (min-width:850px) and (max-width:1449.9px) {
+    .Catalog {
+        grid-area: c;
+        padding: 0;
+        margin: 0 0.5rem 0 0;
+    }
+
+    /* Wedding_Hall_Catalog */
+    .Wedding_Hall_Catalog {
+        padding: 0 1rem;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .Wedding_Hall_Img {
+        margin: 0 10px 1rem 0;
+    }
+
+    .Wedding_Hall_Img_Block {
+        width: 630px;
+        display: flex;
+        margin-top: 38px;
+        overflow: auto;
+    }
+
+    .block {
+        margin: -9rem 0 0 0rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .text {
+        width: 100%;
+    }
+}
+
+@media (min-width:1000px) and (max-width:1150.9px) {
+    .Wedding_Hall_Img_Block {
+        width: 770px !important;
+    }
+}
+
+@media (min-width:1151px) and (max-width:1249.9px) {
+    .Wedding_Hall_Img_Block {
+        width: 900px !important;
+    }
+}
+
+@media (min-width:1250px) and (max-width:1449.9px) {
+    .Wedding_Hall_Img_Block {
+        width: 1000px !important;
+    }
+}

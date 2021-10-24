@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+.Servis_App {
+  display: grid;
+  width: 100%;
+  grid-template-areas:
+    "h h"
+    "n c";
+  grid-template-rows: 340px 1fr;
+  grid-template-columns: 3fr 10fr;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width:0) and (max-width:749.9px) {
+  .Servis_App {
+    grid-template-areas:
+      "h"
+      "n "
+      "c";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    justify-content: center;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+@media (min-width:550px) and (max-width:849.9px) {
+  .Servis_App {
+    grid-template-areas:
+      "h h"
+      "n c";
+    grid-template-columns: 1fr 2fr;
+  grid-template-rows: 150px 1fr;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width:850px) and (max-width:1109.9px) {
+  .Servis_App {
+    grid-template-rows: 250px 1fr;
+    grid-template-columns: 5fr 7fr;
+  }
+}
+
+@media (min-width:1110px) and (max-width:1449.9px) {
+  .Servis_App {
+    grid-template-rows: 300px 1fr;
+    grid-template-columns: 5fr 7fr;
   }
 }
