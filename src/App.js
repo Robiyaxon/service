@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="Servis_App">
       <Route path={'/service'} render={()=><Navbar />}/>
-      <Route path="/service/weddingRooms" render={() => <Toyxona2 />} />
+      <Route exact path="/service" render={() => <Toyxona2 />} />
       <Route path="/service/weddingMachine" render={() => <CAR />} />
       <Route path="/service/artists" render={() => <Artist />} />
       <Route path="/service/cartoonHeroes" render={() => <Heroes />} />

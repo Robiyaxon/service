@@ -21,7 +21,7 @@ import moduleName from './__Navbar.module.css'
 const Navbar = () => {
     return (
         <div className={moduleName.navbar}>
-            <ServiceLink path={'weddingRooms'} name={"To’yxonalar"} icon={weddingRoom} />
+            <ServiceLink path={''} name={"To’yxonalar"} icon={weddingRoom} />
             <ServiceLink path={'invitations'} name={"Taklifnomalar"} icon={inivitation} />
             <ServiceLink path={'flowers'} name={"Gullar"} icon={flower} />
             <ServiceLink path={'rings'} name={"Uzuk"} icon={ring} />
