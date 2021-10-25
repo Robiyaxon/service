@@ -1,0 +1,41 @@
+$color-crimson: #ff416c;
+$color-red: #fa0505;
+$color-green: #3cc8ae;
+$color-blue: #296cf0;
+$color-gray: #c4c4c4;
+$color-yellow: #ffc444;
+$color-brown: #e4bd63;
+$color-skyblue: #55abf5;
+$color-white: #f5f9ff;
+$color-pink: #fdeded;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+button,
+textarea,
+input {
+  outline: none;
+  border: none;
+}

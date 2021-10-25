@@ -1,39 +1,30 @@
-import './App.css'
-import {  Route } from 'react-router-dom'
-import Toyxona2 from './Component/Service/Toyxona/Toyxona'
-import Navbar from './Component/Service/Service_Navbar/Navbar'
-import CAR from './Component/Service/Car/Car'
-import Artist from './Component/Service/Artists/Artists'
-import Heroes from './Component/Service/Multiqahramon/Qahramon';
-import Invitations from './Component/Service/Invitations/Invitations';
-import Flower from './Component/Service/Flower/Flower';
-import Rings from './Component/Service/Rings/Rings';
-import SahnaBezak from './Component/Service/bezaklar/Sahnabezak'
-import Sozanda from './Component/Service/Sozanda/Sozanda';
-import Liboslar from './Component/Service/Liboslar/Liboslar';
-import Sartaroshxona from './Component/Service/Sartaroshxona/Sartaroshxona';
-import Shirinliklar from './Component/Service/Shirinliklar/Shirinliklar';
-import Sovga from './Component/Service/Sovga/Sovga';
-import Aperator from './Component/Service/Aperator/Aperator';
+import "./assets/css/style.css";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+// Pages
+import Catalog from "./pages/Catalog";
+import Manager from "./pages/Manager";
+import Credit from "./pages/Credit";
+import Honeymoon from "./pages/Honeymoon";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import ServicePage_Imports from "./Robiya_Component/Service/ServicePage_Imports";
 function App() {
   return (
-    <div className="Servis_App">
-      <Route path={'/service'} render={()=><Navbar />}/>
-      <Route exact path="/service" render={() => <Toyxona2 />} />
-      <Route path="/service/weddingMachine" render={() => <CAR />} />
-      <Route path="/service/artists" render={() => <Artist />} />
-      <Route path="/service/cartoonHeroes" render={() => <Heroes />} />
-      <Route path="/service/invitations" render={() => <Invitations />} />
-      <Route path="/service/flowers" render={() => <Flower />} />
-      <Route path="/service/rings" render={() => <Rings />} />
-      <Route path="/service/stageDecorations" render={() => <SahnaBezak />} />
-      <Route path="/service/musician" render={() => <Sozanda />} />
-      <Route path="/service/weddingDress" render={() => <Liboslar />} />
-      <Route path="/service/stylist" render={() => <Sartaroshxona />} />
-      <Route path="/service/Sweets" render={() => <Shirinliklar />} />
-      <Route path="/service/gifts" render={() => <Sovga />} />
-      <Route path="/service/operators" render={() => <Aperator />} />
-    </div>
+    <BrowserRouter>
+
+      <Switch>
+     
+        <Route exact path="/" component={Catalog} />
+         <ServicePage_Imports/>
+        <Route path="/manager" component={Manager} />
+        <Route path="/credit" component={Credit} />
+        <Route path="/honeymoon" component={Honeymoon} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/contact" component={Contact} />
+        <Route component={Catalog} />
+       
+      </Switch> 
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,98 @@
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-item-50 {
+  width: 48%;
+}
+
+.flex-item-25 {
+  width: 23%;
+}
+
+.flex-item-100 {
+  width: 100%;
+}
+
+.flex-item-30 {
+  width: 32%;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  font-size: 14px;
+  transition: 0.3s all ease-in-out;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+      rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  }
+  i {
+    margin-right: 10px;
+  }
+}
+
+.btn-white {
+  color: $color-crimson;
+}
+
+.btn-crimson {
+  background-color: $color-crimson;
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.dropdown-ui {
+  padding: 5px 10px;
+  color: #000;
+  background-color: #fff;
+  font-weight: 500;
+  border: none;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  border: 1px solid $color-white;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: $color-crimson;
+  }
+  &:checked {
+    background-color: #fff;
+  }
+  &:focus {
+    background-color: #fff !important;
+    outline: none;
+    color: #000 !important;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.25) !important;
+    border-color: $color-crimson !important;
+  }
+  i {
+    margin-right: 10px;
+    color: $color-crimson;
+  }
+  &::after {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .wrapper {
+    width: 1500px;
+  }
+}

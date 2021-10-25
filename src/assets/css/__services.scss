@@ -1,0 +1,33 @@
+.services {
+  padding: 80px 0;
+  background: #f9f9f9;
+  .services__btn {
+    padding: 10px 24px;
+    border-radius: 12px;
+    display: block;
+    margin-top: 30px;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.4s all ease-in-out;
+    font-weight: 500;
+    border: 1px solid #fff;
+    &:hover {
+      color: rgba(240, 46, 170, 0.9);
+      border: 1px solid rgba(240, 46, 170, 0.3);
+      box-shadow: rgba(240, 46, 170, 0.4) 0px 5px,
+        rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px,
+        rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    }
+  }
+  .btn__row {
+    width: 100%;
+    padding: 0 2%;
+  }
+  .active {
+    border: 1px solid rgba(240, 46, 170, 0.3);
+    color: rgba(240, 46, 170, 0.9);
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px,
+      rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px,
+      rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+  }
+}
